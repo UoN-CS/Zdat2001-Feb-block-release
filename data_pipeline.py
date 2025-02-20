@@ -12,4 +12,5 @@ def load_data(filepath):
 def clean_data(df):
     """Perform basic cleaning on the DataFrame."""
     df = df.dropna()  # Drop missing values
+    df = df.drop_duplicates()  # remove duplicate rows
     return df
