@@ -12,6 +12,5 @@ def load_data(filepath):
 def clean_data(df):
     """Perform data cleaning by dropping missing values and converting column names to lower names to lower case."""
     df = df.dropna()  # Drop missing values
-    df = df.drop_duplicates()  # remove duplicate rows
     df.columns= df.columns.str.lower()
     return df
